@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma progression - Les Elites</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="styles/progression.css">
+    <link rel="stylesheet" href="styles/profilTest.css">
+</head>
+<body>
+    <nav class="barNav" aria-label="Navigation principale">
+        <h2>Les Elites <i class="fa-solid fa-book" aria-hidden="true"></i></h2>
+        <ul class="contlist">
+            <li class="liste"><a href="index.html">Accueil</a></li>
+            <li class="liste"><a href="index.html#Cours">Cours</a></li>
+            <li class="liste"><a href="profilTest.html" aria-current="page">Progression</a></li>
+            <li class="liste"><a href="profil.html">Profil</a></li>
+        </ul>
+    </nav>
+
+    <main class="dashboard">
+        <header class="page-heading">
+            <div>
+                <p class="eyebrow">ESPACE ÉTUDIANT</p>
+                <h1>Ma progression d’étude</h1>
+                <p class="intro">Un aperçu de tes objectifs et de tes avancées.</p>
+            </div>
+            <span class="sample-label"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Données d’exemple</span>
+        </header>
+
+        <section class="goal-section" aria-labelledby="goal-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">OBJECTIF DE LA SEMAINE</p>
+                    <h2 id="goal-title">Garder le rythme</h2>
+                </div>
+                <span class="goal-value">3 h 30 <span>/ 5 h</span></span>
+            </div>
+            <progress class="goal-progress" value="70" max="100" aria-label="Objectif hebdomadaire : 70 % atteint">70 %</progress>
+            <p class="goal-caption">Encore 1 h 30 pour atteindre ton objectif hebdomadaire.</p>
+        </section>
+
+        <section class="stats-grid" aria-label="Résumé de la progression">
+            <article class="stat-item">
+                <span class="stat-icon blue"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></span>
+                <p class="stat-label">Progression globale</p>
+                <p class="stat-value">72 <span>%</span></p>
+            </article>
+            <article class="stat-item">
+                <span class="stat-icon green"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></span>
+                <p class="stat-label">Cours terminés</p>
+                <p class="stat-value">12 <span>/ 17</span></p>
+            </article>
+            <article class="stat-item">
+                <span class="stat-icon amber"><i class="fa-regular fa-clock" aria-hidden="true"></i></span>
+                <p class="stat-label">Temps d’étude</p>
+                <p class="stat-value">18 h 30</p>
+            </article>
+            <article class="stat-item">
+                <span class="stat-icon coral"><i class="fa-solid fa-fire" aria-hidden="true"></i></span>
+                <p class="stat-label">Série actuelle</p>
+                <p class="stat-value">4 <span>jours</span></p>
+            </article>
+        </section>
+
+        <section class="subjects-section" aria-labelledby="subjects-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">SUIVI PAR MATIÈRE</p>
+                    <h2 id="subjects-title">Où en es-tu ?</h2>
+                </div>
+            </div>
+            <div class="subject-list">
+                <article class="subject-row">
+                    <div class="subject-icon"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></div>
+                    <div class="subject-info">
+                        <div class="subject-heading"><h3>Informatique</h3><span>8 cours sur 10</span></div>
+                        <progress class="subject-progress computer" value="80" max="100" aria-label="Informatique : 80 %">80 %</progress>
+                    </div>
+                    <strong class="subject-percent">80 %</strong>
+                </article>
+                <article class="subject-row">
+                    <div class="subject-icon"><i class="fa-solid fa-language" aria-hidden="true"></i></div>
+                    <div class="subject-info">
+                        <div class="subject-heading"><h3>Anglais</h3><span>6 cours sur 9</span></div>
+                        <progress class="subject-progress english" value="65" max="100" aria-label="Anglais : 65 %">65 %</progress>
+                    </div>
+                    <strong class="subject-percent">65 %</strong>
+                </article>
+            </div>
+        </section>
+
+        <section class="activity-section" aria-labelledby="activity-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">DERNIÈRES ACTIVITÉS</p>
+                    <h2 id="activity-title">Tes révisions récentes</h2>
+                </div>
+            </div>
+            <ul class="activity-list">
+                <li><span class="activity-mark done"><i class="fa-solid fa-check" aria-hidden="true"></i></span><span><strong>Balises HTML</strong><small>Informatique · Leçon terminée</small></span><time>Exemple</time></li>
+                <li><span class="activity-mark study"><i class="fa-solid fa-book-open" aria-hidden="true"></i></span><span><strong>Vocabulaire courant</strong><small>Anglais · Révision effectuée</small></span><time>Exemple</time></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

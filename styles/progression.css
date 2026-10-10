@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    font-family: freestyle script;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f4efe7;
+    height: 100vh;
+    margin: 0;
+}
+.barNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0d47a1;
+    height: 90px;
+    padding-right: 10px;
+    padding-left: 10px;
+    transition: all 0.5s ease;
+}
+.contlist{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 10px;
+}
+.liste{
+    padding: 1px 10px;
+    font-family: freestyle script;
+    font-size: 2.5em;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+h2{
+    font-family: freestyle script;
+    font-size: 5em;
+    padding: 0;
+}
+.liste:hover{
+    background-color: white;
+    transition: all 0.5s ease;
+    color: black;
+}
+a:hover{
+    color: black;
+}
+.progress{
+    display: block;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+}
+main.dashboard{
+    display: block;
+    height: auto;
+}
+.progress-placeholder{
+    width: 100%;
+    min-height: 10px;
+    border-radius: 10px;
+    background: #d7dfdc;
+}
+.subject-progress-placeholder{
+    min-height: 8px;
+    margin-top: 9px;
+}
+main.dashboard .subject-row:nth-child(2) .subject-icon{
+    color: #0d47a1;
+    background: #e1eafa;
+}
+main.dashboard .subject-row:nth-child(3) .subject-icon{
+    color: #08705e;
+    background: #dcefe8;
+}
+main.dashboard .subject-row:nth-child(4) .subject-icon{
+    color: #96620b;
+    background: #f8edcf;
+}
+main.dashboard .subject-row:nth-child(5) .subject-icon{
+    color: #b54d37;
+    background: #f9e3dc;
+}
