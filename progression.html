@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ma progression — Plateforme d'étude</title>
+	<link rel="stylesheet" href="styles/progression.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <nav class="barNav">
+    <h2><u>Les Elites <i class="fa-solid fa-book"></i> </u></h2>
+    <ul class="contlist">
+        <li class="liste"><a href="index.html" >Acceuil</a></li>
+        <li class="liste"><a href="index.html#Cours" aria-current="hidden">Cours</a></li>
+        <li class="liste"><a href="progression.html#" aria-current="page">Progression</a></li>
+        <li class="liste"><a href="profil.html#" aria-current="hidden">Profil</a></li>
+    </ul>
+   </nav>
+
+	<main>
+		<header>
+			<h1>Ma progression</h1>
+			<p class="intro">Suivez vos apprentissages et gardez le rythme.</p>
+		</header>
+
+		<section class="summary" aria-label="Résumé de progression">
+			<article class="card"><h2>Progression globale</h2><div class="value">68 %</div></article>
+			<article class="card"><h2>Leçons terminées</h2><div class="value">24 / 35</div></article>
+			<article class="card"><h2>Temps d'étude cette semaine</h2><div class="value">6 h 20</div></article>
+		</section>
+
+		<section aria-labelledby="courses-title">
+			<h2 class="section-title" id="courses-title">Progression par matière</h2>
+			<article class="course">
+				<div class="course-heading"><h3>Mathématiques</h3><span>75 %</span></div>
+				<p>9 leçons terminées sur 12</p>
+				<progress value="75" max="100" aria-label="Mathématiques : 75 %"></progress>
+			</article>
+			<article class="course">
+				<div class="course-heading"><h3>Sciences</h3><span>60 %</span></div>
+				<p>6 leçons terminées sur 10</p>
+				<progress value="60" max="100" aria-label="Sciences : 60 %"></progress>
+			</article>
+			<article class="course">
+				<div class="course-heading"><h3>Histoire</h3><span>67 %</span></div>
+				<p>8 leçons terminées sur 12</p>
+				<progress value="67" max="100" aria-label="Histoire : 67 %"></progress>
+			</article>
+		</section>
+
+		<section aria-labelledby="activity-title">
+			<h2 class="section-title" id="activity-title">Activité récente</h2>
+			<ul class="activity">
+				<li>Mathématiques — Équations du premier degré · Terminé aujourd'hui</li>
+				<li>Sciences — Les écosystèmes · Terminé hier</li>
+				<li>Histoire — Révisions du chapitre 3 · Terminé cette semaine</li>
+			</ul>
+		</section>
+	</main>
+</body>
+</html>

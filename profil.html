@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LES ELITES</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="icon" type="images\jpg" href="Capture d’écran 2026-09-24 191536.jpg">
+    <link rel="stylesheet" href="styles/profil.css">
+</head>
+<body>
+    <nav class="barNav">
+    <h2><u>Les Elites <i class="fa-solid fa-book"></i> </u></h2>
+    <ul class="contlist">
+        <li class="liste"><a href="index.html" >Acceuil</a></li>
+        <li class="liste"><a href="index.html#Cours" aria-current="hidden">Cours</a></li>
+        <li class="liste"><a href="progression.html#" aria-current="hidden">Progression</a></li>
+        <li class="liste"><a href="profil.html#" aria-current="page">Profil</a></li>
+    </ul>
+   </nav>
+    <main class="mainProfil">
+        <aside class="profile-sidebar" aria-label="Menu du profil">
+            <div class="user-summary">
+                <div class="user-avatar" aria-hidden="true">UE</div>
+                <p class="user-name">Mon espace</p>
+                <p class="user-caption">Votre compte élève</p>
+            </div>
+            <nav aria-label="Navigation du profil">
+                <a class="sidebar-link active" href="#mon-profil" aria-current="page">
+                    <i class="fa-regular fa-user" aria-hidden="true"></i> Mon profil
+                </a>
+                <a class="sidebar-link" href="#informations">
+                    <i class="fa-regular fa-id-card" aria-hidden="true"></i> Mes informations
+                </a>
+                <a class="sidebar-link" href="index.html#Cours">
+                    <i class="fa-solid fa-book-open" aria-hidden="true"></i> Mes cours
+                </a>
+                <a class="sidebar-link" href="progression.html">
+                    <i class="fa-solid fa-chart-line" aria-hidden="true"></i> Ma progression
+                </a>
+            </nav>
+        </aside>
+        <section class="profile-content" id="mon-profil">
+            <div class="page-heading">
+                <p class="eyebrow">ESPACE PERSONNEL</p>
+                <h1>Mon profil</h1>
+                <p>Consultez et mettez à jour vos informations personnelles.</p>
+            </div>
+            <section class="contProfil" id="informations" aria-labelledby="personal-info-title">
+                <div class="form-heading">
+                    <div class="form-avatar" aria-hidden="true"><i class="fa-regular fa-user"></i></div>
+                    <div>
+                        <h2 id="personal-info-title">Informations personnelles</h2>
+                        <p>Ces informations vous aident à personnaliser votre espace.</p>
+                    </div>
+                </div>
+                <form action="" method="post" name="foEtd">
+                    <div class="form-field">
+                        <label for="Nom">Nom</label>
+                        <input type="text" name="Nom" id="Nom" placeholder="Votre nom" autocomplete="family-name">
+                    </div>
+                    <div class="form-field">
+                        <label for="Prenom">Prénom</label>
+                        <input type="text" name="Prenom" id="Prenom" placeholder="Votre prénom" autocomplete="given-name">
+                    </div>
+                    <div class="form-field">
+                        <label for="DateNaissance">Date de naissance</label>
+                        <input type="date" name="DateNaissance" id="DateNaissance" autocomplete="bday">
+                    </div>
+                    <div class="form-field">
+                        <label for="numTel">N° de téléphone</label>
+                        <input type="tel" name="telephone" id="numTel" placeholder="Votre numéro de téléphone" autocomplete="tel">
+                    </div>
+                    <button class="btnE" type="submit">Enregistrer les modifications</button>
+                </form>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>leselite@gmail.com</p>
+        <p>WhatsApp : 6xx xxx xxx / 6xx xxx xxx</p>
+        <p>Facebook : lesElites</p>
+        <p>Instagram : @lesElites</p>
+    </footer>
+</body>
+</html>
