@@ -14,6 +14,365 @@ body {
     background: #f4efe7;
 }
 
+.barNav {
+    display: flex;
+    min-height: 76px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background: #0d47a1;
+}
+
+.brand {
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 1.7rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.brand i {
+    margin-left: 5px;
+    font-size: 1.2rem;
+}
+
+.contlist {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.liste a {
+    display: block;
+    padding: 8px 12px;
+    border-radius: 6px;
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.liste a:hover,
+.liste a[aria-current="page"] {
+    color: #0d47a1;
+}
+
+.mainProfil {
+    display: grid;
+    grid-template-columns: 260px minmax(0, 1fr);
+    gap: 36px;
+    width: min(100% - 48px, 1200px);
+    min-height: calc(100vh - 180px);
+    margin: 42px auto 56px;
+    align-items: start;
+}
+
+.profile-sidebar {
+    position: sticky;
+    top: 24px;
+    overflow: hidden;
+    border: 1px solid #e1e7ed;
+    border-radius: 14px;
+    background: white;
+    box-shadow: 0 8px 24px rgba(16, 42, 67, 0.06);
+}
+
+.user-summary {
+    padding: 24px 20px;
+    text-align: center;
+    border-bottom: 1px solid #e8edf2;
+}
+
+.user-avatar,
+.form-avatar {
+    display: grid;
+    width: 64px;
+    height: 64px;
+    place-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    color: #0d47a1;
+    background: #eaf1fb;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.user-name {
+    margin: 14px 0 4px;
+    color: #102a43;
+    font-weight: bold;
+}
+
+.user-caption {
+    margin: 0;
+    color: #627d98;
+    font-size: 0.88rem;
+}
+
+.profile-sidebar nav {
+    display: grid;
+    gap: 6px;
+    padding: 14px 10px;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    border-radius: 8px;
+    color: #52606d;
+    font-size: 0.94rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.sidebar-link i {
+    width: 18px;
+    color: #627d98;
+    text-align: center;
+}
+
+.sidebar-link:hover,
+.sidebar-link.active {
+    color: #0d47a1;
+    background: #eaf1fb;
+}
+
+.sidebar-link.active {
+    font-weight: bold;
+}
+
+.sidebar-link.active i {
+    color: #0d47a1;
+}
+
+.profile-content {
+    min-width: 0;
+}
+
+.page-heading {
+    margin: 4px 0 26px;
+}
+
+.eyebrow {
+    margin: 0 0 8px;
+    color: #0d47a1;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.page-heading h1 {
+    margin: 0;
+    color: #102a43;
+    font-family: Georgia, serif;
+    font-size: clamp(2rem, 4vw, 2.7rem);
+}
+
+.page-heading > p:last-child {
+    margin: 10px 0 0;
+    color: #52606d;
+    line-height: 1.5;
+}
+
+.contProfil {
+    padding: 30px;
+    border: 1px solid #e1e7ed;
+    border-radius: 14px;
+    background: white;
+    box-shadow: 0 8px 24px rgba(16, 42, 67, 0.06);
+}
+
+.form-heading {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e8edf2;
+}
+
+.form-avatar {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.form-heading h2 {
+    margin: 0;
+    color: #102a43;
+    font-family: Georgia, serif;
+    font-size: 1.3rem;
+}
+
+.form-heading p {
+    margin: 6px 0 0;
+    color: #627d98;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    padding-top: 24px;
+}
+
+.form-field {
+    display: grid;
+    gap: 8px;
+}
+
+.form-field label {
+    color: #334e68;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.form-field input {
+    width: 100%;
+    min-height: 44px;
+    padding: 10px 12px;
+    border: 1px solid #cbd5df;
+    border-radius: 7px;
+    color: #182b3a;
+    background: white;
+    font-size: 0.95rem;
+}
+
+.form-field input:focus-visible,
+.btnE:focus-visible,
+.sidebar-link:focus-visible,
+.liste a:focus-visible {
+    outline: 3px solid #83b5ff;
+    outline-offset: 2px;
+}
+
+.btnE {
+    grid-column: 1 / -1;
+    justify-self: start;
+    min-height: 46px;
+    padding: 0 20px;
+    border: 0;
+    border-radius: 7px;
+    color: white;
+    background: #0d47a1;
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btnE:hover {
+    background: #09377c;
+}
+
+footer {
+    padding: 18px;
+    color: white;
+    background: #0d47a1;
+    text-align: center;
+}
+
+footer p {
+    margin: 8px;
+}
+
+@media (max-width: 760px) {
+    .mainProfil {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        width: min(100% - 32px, 620px);
+        margin: 28px auto 40px;
+    }
+
+    .profile-sidebar {
+        position: static;
+    }
+
+    .user-summary {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 16px;
+        text-align: left;
+    }
+
+    .user-avatar {
+        width: 48px;
+        height: 48px;
+        margin: 0;
+        flex: 0 0 auto;
+    }
+
+    .user-name {
+        margin: 0 0 4px;
+    }
+
+    .profile-sidebar nav {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 520px) {
+    .barNav {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        padding: 14px 20px;
+    }
+
+    .contlist {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 2px;
+    }
+
+    .liste a {
+        padding: 7px 9px;
+        font-size: 0.85rem;
+    }
+
+    .profile-sidebar nav {
+        grid-template-columns: 1fr;
+    }
+
+    .contProfil {
+        padding: 22px 18px;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .btnE {
+        grid-column: auto;
+        justify-self: stretch;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    color: #182b3a;
+    background: #f4efe7;
+}
+
 .barNav{
     display: flex;
     justify-content: space-between;
